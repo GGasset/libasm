@@ -3,7 +3,7 @@ global ft_strlen
 
 ft_strlen:
 	mov rcx, rdi ; Move input string pointer to %rcx
-	mov rax, 0 ; Load 0 to general purpose 32bit register %ebx, %ebx is the length of the string (return value)
+	mov rax, 0
 
 	cmp rcx, 0 ; Check if first argument is 0, str is null
 	je .return ; Jump to return label if %rdi is 0
