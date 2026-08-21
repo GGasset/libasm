@@ -18,7 +18,7 @@ ft_strcmp:
 
 	; Get difference between characters and return if they are different
 	sub r8b, r9b
-	mov eax, r8b
+	movsx eax, r8b
 	cmp eax, 0
 	jne .return
 
